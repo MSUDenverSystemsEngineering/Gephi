@@ -62,7 +62,7 @@ Try {
 	[string]$appArch = 'x86'
 	[string]$appLang = 'EN'
 	[string]$appRevision = '01'
-	[string]$appScriptVersion = '1.0.1'
+	[string]$appScriptVersion = '1.0.0'
 	[string]$appScriptDate = '02/02/2017'
 	[string]$appScriptAuthor = 'Jordan Hamilton'
 	##*===============================================
@@ -132,7 +132,7 @@ Try {
 		}
 
 		## <Perform Installation tasks here>
-		Execute-Process -Path "gephi-0.9.1-windows.exe" -Parameters "/VERYSILENT /NORESTART" -WindowStyle "Hidden" -PassThru
+		Execute-Process -Path "gephi-0.9.1-windows.exe" -Parameters -WindowStyle "Hidden" -PassThru
 
 		##*===============================================
 		##* POST-INSTALLATION
